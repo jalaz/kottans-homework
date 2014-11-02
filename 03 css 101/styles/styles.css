@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('../fonts/josefinsans-regular-webfont.eot');
+    src: url('../fonts/josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/josefinsans-regular-webfont.woff') format('woff'),
+         url('../fonts/josefinsans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'Cherry Swash', arial, san-serif;
+	font-size: 16px;
+	height: 100%;
+}
+
+.container{
+	min-height: 100%;
+}
+
+.background {
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+}
+
+.background img {
+	height: 100%;
+}
+
+.container .left-col {
+	width: 15%;
+	position: fixed;
+	height: 100%;
+	color: white;
+}
+.container .left-col .wrapper{
+	opacity: 0.8;
+	background-color: #0C5A3B;
+	height: 100%;
+}
+
+header{
+	padding: 20% 15% 0 15%;
+}
+
+.logo img{
+	border-radius: 50%;
+	background-color: #FEC;
+}
+
+nav {
+	border-top: 2px solid white;
+	font-size: 1.3em;
+	text-align: left;
+	padding: 1.1em;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin-top: 3%;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover{
+	color: #E8B40C;
+}
+
+.right-col{
+	right: 0;
+	position: absolute;
+	min-height: 100%;
+	width: 85%;
+	background-color: #fff;
+}
+
+.right-col a{
+	color: #E8B40C;
+}
+
+.right-col-container section, footer {
+	padding: 2% 20% 0 5%;
+	border-bottom: 1px solid #ddd;
+}
+
+.right-col-container section h2 {
+	color: #0C5A3B;
+	border-bottom: 1px solid #0C5A3B;
+}
+
+.about p:first-letter {
+	font-size: 20px;
+	color: #0C5A3B;
+}
+
+.copyright:before{
+	content: "© "
+}
+
+.right-col-container .feedback {
+	border-bottom:none;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+}
+
+footer {
+	background-color: #F7F7F7;
+}
