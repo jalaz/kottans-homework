@@ -8,11 +8,13 @@
 <body>
 	<header>
 		<nav>
-			<a href="#about">About</a>
-			<a href="#faq">FAQ</a>
-			<a href="#contacts">Contacts</a>
-			<a href="#register">Register</a>
-			<a href="#feedback">Feedback</a>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#faq">FAQ</a></li>
+				<li><a href="#contacts">Contacts</a></li>
+				<li><a href="#register">Register</a></li>
+				<li><a href="#feedback">Feedback</a></li>
+			</ul>
 		</nav>
 	</header>
 	<section id="about">
@@ -20,7 +22,6 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, perspiciatis. Id et nisi obcaecati unde velit, sequi modi aliquid sapiente error saepe ullam aliquam dicta! Expedita ut tempora, blanditiis nulla!</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam velit et nulla optio mollitia est, voluptas? Pariatur perferendis veritatis aperiam maiores at! Quos autem cum laboriosam, mollitia eius. Distinctio, unde.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum fuga ea accusantium dolorem temporibus vel, dolores dignissimos repellendus tempora nihil nobis aut consectetur odio vero quisquam, perspiciatis dolorum labore!</p>
-		<img src="img/ice-cream.jpg" height="601" width="1800" alt="icecream">
 	</section>
 	<section id="faq">
 		<h2>FAQ</h2>
@@ -47,7 +48,7 @@
 		   	TUCSON AZ 85705
 		   	USA
 		</span>
-		<span class="contacts-email">marwell@marvelous.com</span>
+		<span class="contacts-email"><a href="mailto:marwell@marvelous.com">marwell@marvelous.com</a></span>
 		<span class="contacts-social">
 			<a class="twitter" href="https://twitter.com/marvelousicecream">Our twitter</a>
 			<a href="https://www.facebook.com/marvelousicecream" class="facebook">Our facebook</a>
@@ -57,13 +58,13 @@
 		<h2>Register</h2>
 		<form action="#">
 			<label>Email
-				<input type="email">	
+				<input type="email" name="email">	
 			</label>
 			<label>Password
-				<input type="password">	
+				<input type="password" name="password">	
 			</label>
 			<label>Confirm password
-				<input type="password">
+				<input type="password" name="repeatpassword">
 			</label>
 		</form>
 	</section>
@@ -71,13 +72,13 @@
 		<h2>Feedback</h2>
 		<form action="#">
 			<label>Your name
-				<input type="text">
+				<input type="text" name="name">
 			</label>
 			<label>Your email
-				<input type="email">
+				<input type="email" name="email">
 			</label>
 			<label>Your message
-				<textarea></textarea>
+				<textarea name="message"></textarea>
 			</label>
 		</form>
 	</section>
