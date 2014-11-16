@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Marvelous ice cream</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css"/>
+	<link rel="stylesheet" href="styles/font-awesome.css"/>
+	<link rel="stylesheet" href="styles/styles.css">
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script>
+		var map;
+		function initialize() {
+			var mapOptions = {
+				zoom: 8,
+				center: new google.maps.LatLng(-34.397, 150.644)
+			};
+			map = new google.maps.Map(document.getElementById('map-canvas'),
+					mapOptions);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="#about"><i class="fa fa-home "></i>About</a></li>
+						<li><a href="#faq"><i class="fa fa-question-circle"></i>FAQ</a></li>
+						<li><a href="#contacts"><i class="fa fa-location-arrow"></i>Contacts</a></li>
+						<li><a href="#stay-in-touch"><i class="fa fa-smile-o"></i>Stay in touch</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="about" class="about">
+				<h2>About Us</h2>
+				<p>Первостепенный текст Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, </p>
+				<img class="floatleft" src="img/2copyam5.png" alt="" width="200" height="156"/>
+				<p>Второстепенный текст, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+				<p>Третий сорт, забиваем полосу Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit </p>
+				<img class="floatright" src="img/2copyam5.png" alt="" width="200" height="156"/>
+				<p>Третий сорт, забиваем полосу Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit </p>
+				<p>Третий сорт, забиваем полосу Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit </p>
+				<p>Третий сорт, забиваем полосу Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit </p>
+			</section>
+
+			<section id="faq" class="faq">
+				<h2>FAQ</h2>
+				<dl>
+					<dt><strong>Q</strong>: I want to make ice cream, but I’d like to make a lower-fat version. Do you have any tips? Can I just use 2 percent milk, or something similar? Also, if I were to make frozen yogurt, what kind of yogurt should I use?</dt>
+					<dd><strong>A</strong>: Unfortunately, if you use low-fat milk exclusively, your ice cream is going to taste like frozen water. To reduce fat, better to use low-fat sour cream, which has a better texture. Ditto with yogurt. But I recommend using full-fat varieties and just eating a bit less, to cut back on fat and calories. — David Lebovitz</dd>
+					<dt><strong>Q</strong>: I’m dying to make ice cream. I have a KitchenAid stand mixer. If you had to choose between the KitchenAid attachment or a stand-alone ice cream maker, which would you choose and why?</dt>
+					<dd><strong>A</strong>: I have a stand mixer, which I love, but here’s the thing: Because I don’t have enough counter space to leave it out all the time, I have it tucked away, which means I don’t use it as much as I probably would otherwise. So I have a separate maker (Cuisinart, which I like). If I were making lots of ice cream all the time, I might invest in one of those models with a built-in freezer. — Joe Yonan</dd>
+					<dt><strong>Q</strong>: Do you still have to cook an ice cream mixture when using a water-soluble sweetener, such as agave nectar?</dt>
+					<dd><strong>A</strong>: Ice cream mixtures don’t always have to be cooked (as in Philadelphia-style ice creams), and sometimes cooked mixtures, if you use honey, can curdle. I’m not sure about agave, but it depends on the recipe. In general, if it’s an egg-based recipe, it should be cooked. — D.L.</dd>
+					<dt><strong>Q</strong>: When making chocolate chip/chunk ice cream, what’s the best chocolate to use? Bittersweet? Semisweet?</dt>
+					<dd><strong>A</strong>: In the U.S., semisweet and bittersweet are interchangeable terms, so use whatever tastes best to you. Go for a strongly flavored chocolate for chunks.
+					<dt><strong>Q</strong>: When making chocolate chip/chunk ice cream, what’s the best chocolate to use? Bittersweet? Semisweet?</dt>
+					<dd><strong>A</strong>: In the U.S., semisweet and bittersweet are interchangeable terms, so use whatever tastes best to you. Go for a strongly flavored chocolate for chunks.
+
+						I prefer to chop up my own chocolate block rather than use pre-made chips. — D.L.
+					</dd>
+				</dl>
+			</section>
+
+			<section class="contacts" id="contacts">
+				<h2>Contacts</h2>
+				  <div class="contacts-map">
+						<div id="map-canvas"></div>
+				  </div>
+
+					<div class="contacts-description">
+						<ul>
+							<li><i class="fa fa-map-marker"></i> <em>address:</em> MARWELL YOHANSSEN MARVELOUS ICE CREAM INC 15 E DRAGRAM TUCSON AZ 85705 USA</li>
+							<li><i class="fa fa-phone"></i> <em>email</em>: <a href="mailto:marwell@marvelous.com">marwell@marvelous.com</a></li>
+							<li><i class="fa fa-envelope"></i> <em>phone</em>: <span class="phone">888-888-88</span></li>
+						</ul>
+					</div>
+			</section>
+
+			<section id="stay-in-touch">
+				<h2>Stay in touch</h2>
+				<form class="touch-form" action="#">
+					<div class="row">
+						<label>Name
+							<input type="text" name="name">
+						</label>
+					</div>
+					<div class="row">
+						<label>Email
+							<input type="email" name="email">
+						</label>
+					</div>
+					<div class="row">
+						<label ><input type="checkbox" checked/>I agree to get spam</label>
+					</div>
+				</form>
+			</section>
+
+			<footer>
+				<div class="block">
+					<div class="footer-left">
+						<div class="box">
+							<nav>
+								<ul>
+									<li><a href="#about">Home</a></li>
+									<li><a href="#faq">Faq</a></li>
+									<li><a href="#contacts">Contacts</a></li>
+									<li><a href="#stay-in-touch">Stay in touch</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="footer-right">
+						<div class="box">
+							<form class="vote-form" action="#">
+								<h4><i class="fa fa-share"></i>Let us hear your feedback</h4>
+								<div class="row">
+									<div class="form-left">
+										<strong>How likely will you advise us?</strong>
+										<ul class="radio-listing">
+											<li><label><input type="radio" name="vote" checked/>--</label></li>
+											<li><label><input type="radio" name="vote" />-+</label></li>
+											<li><label><input type="radio" name="vote" />+-</label></li>
+											<li><label><input type="radio" name="vote" />++</label></li>
+										</ul>
+									</div>
+									<div class="form-right">
+										<input name="vote" type="submit" value="Vote">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="copyright">2014 MARVELOUS ICE CREAM, Inc.</div>
+					<div class="terms-of-service">
+						<a href="/policies/privacy">Privacy Policy</a>
+						<a href="/policies/terms">Terms of Service</a>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</div>
+</body>
+</html>

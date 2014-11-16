@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('../fonts/josefinsans-regular-webfont.eot');
+    src: url('../fonts/josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/josefinsans-regular-webfont.woff') format('woff'),
+         url('../fonts/josefinsans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'josefin_sansregular', Arial, san-serif;
+	font-size: 16px;
+	height: 100%;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.container img {
+	display: block;
+	border:1px solid #ccc;
+}
+.floatleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+.floatright {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+.background {
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+}
+
+.background img {
+	height: 100%;
+}
+
+header{
+	padding: 10px 0 10px;
+	background: url(../img/ice-cream.jpg) no-repeat;
+	position: relative;
+}
+header:after {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: #0C5A3B;
+	opacity: .8;
+}
+
+.logo img{
+	border-radius: 50%;
+	background-color: #fec;
+}
+
+nav {
+	font-size: 1.3em;
+	text-align: left;
+	padding: 0;
+	position: relative;
+	z-index: 5;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+nav ul li {
+	margin-top: 0;
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover{
+	color: #E8B40C;
+}
+nav .fa {
+	margin: 0 5px 0 0;
+}
+
+section {
+	padding: 25px 0;
+}
+.about p:first-letter {
+	font-size: 20px;
+	color: #0C5A3B;
+}
+
+.copyright:before{
+	content: "© "
+}
+
+.faq {
+	border-width: 2px 0;
+	border-style: dashed;
+	border-color: #0C5A3B;
+}
+
+.faq dt,
+.faq dd {
+	padding: 0 0 5px;
+}
+
+.contacts {
+	background: #0C5A3B;
+	color: #fff;
+	padding: 25px 25px;
+	overflow: hidden;
+}
+
+.contacts-map {
+	float: left;
+	width: 50%;
+	height: 200px;
+}
+.contacts-description {
+	float: right;
+	width: 50%;
+}
+.contacts-description ul {
+	padding: 0;
+	list-style: none;
+}
+.contacts-description ul li {
+	padding: 0 0 10px;
+}
+.phone {
+	color: #fff;
+	text-decoration: underline;
+}
+.contacts-description a {
+	color: #fff;
+	text-decoration: underline;
+}
+.contacts-description ul em {
+	font-size: 16px;
+	font-style: normal;
+}
+
+#map-canvas {
+	width: 95%;
+	height: 100%;
+}
+
+form .row {
+	padding: 0 0 15px;
+}
+
+.touch-form {
+	width: 80%;
+	margin: 0 auto;
+}
+form input[type=text],
+form input[type=email]{
+	border:1px solid #0C5A3B;
+	width: 200px;
+}
+form input[type=checkbox] {
+	display: inline-block;
+	vertical-align: top;
+	margin: 3px 5px 0 0;
+}
+form input[type=radio] {
+	display: inline-block;
+	vertical-align: top;
+	margin: 3px 5px 0 0;
+}
+.vote-form h4 {
+	font-size: 1.3em;
+	padding: 0;
+	margin: 0 0 20px;
+}
+.vote-form h4 .fa {
+	margin: 0 5px 0 0;
+}
+.vote-form .row {
+	overflow: hidden;
+}
+.vote-form .form-left {
+	float: left;
+	width: 70%;
+}
+.vote-form .form-right {
+	float: right;
+	width: 30%;
+}
+.vote-form input[type="submit"]  {
+	width: 100%;
+	margin: 0;
+}
+.radio-listing {
+	margin: 0;
+	padding: 10px 0;
+	list-style: none;
+}
+.radio-listing li {
+	display: inline-block;
+	vertical-align: top;
+	width: 23%;
+}
+
+input[type="submit"] {
+	font: 18px/20px 'bebas_neueregular', Arial, sans-serif;
+	display: block;
+	padding: 0;
+	width: 150px;
+	height: 34px;
+	border:1px solid #333;
+	background: #fff;
+	color: #0C5A3B;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.right-col-container .feedback {
+	border-bottom:none;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+}
+
+footer {
+	background-color: #0C5A3B;
+	color: #fff;
+}
+footer .block {
+	overflow: hidden;
+	padding: 25px 25px;
+}
+.footer-left {
+	width: 50%;
+	float: left;
+}
+.footer-right {
+	width: 50%;
+	float: right;
+}
+.footer-bottom {
+	background: #666;
+	text-align: center;
+	padding: 10px 0;
+}
+.footer-bottom a {
+	color: #fff;
+	text-decoration: underline;
+}
+footer nav {
+	font-size: 1.3em;
+	padding: 0;
+	position: relative;
+	text-align: left;
+	z-index: 5;
+}
+footer nav ul {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+footer nav ul li {
+	float: none;
+	width: 100%;
+	text-align: left;
+	padding: 0 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+	nav {
+		font-size: 1em;
+	}
+	footer .block {
+		padding: 25px 0;
+	}
+	.footer-bottom {
+		color: #333;
+		background: #fff;
+	}
+	.footer-bottom a {
+		color: #333;
+	}
+	footer nav {
+		font-size: 0.8em;
+	}
+	footer nav ul li {
+		float: left;
+		width: 25%;
+		text-align: center;
+	}
+	.vote-form {
+		padding: 0 0 0 20px;
+	}
+	.vote-form .form-left {
+		width: 60%;
+	}
+	.vote-form .form-right{
+		width: 40%;
+	}
+	.radio-listing li {
+		display: block;
+		padding: 0 0 5px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+
+	header {
+		padding: 0;
+	}
+	nav {
+		font-size: 1.3em;
+	}
+	nav ul li {
+		float: none;
+		width: 100%;
+		border-top:2px solid #fff;
+	}
+	nav ul li:first-child {
+		border:0;
+	}
+	nav a {
+		display: block;
+		padding: 15px 0;
+	}
+	.about img {
+		display: none;
+	}
+	.contacts-map {
+		float: none;
+		width: 100%;
+		padding: 0 0 20px;
+	}
+	.contacts-description {
+		float: none;
+		width: 100%;
+	}
+	.touch-form {
+		width: 90%;
+	}
+	.footer-left {
+		display: none;
+	}
+	.footer-right {
+		float: none;
+		width: 100%;
+	}
+	.vote-form input[type="submit"] {
+		height: 100px;
+		margin: 30px 0 0;
+	}
+	.vote-form {
+		padding: 0 20px;
+	}
+
+}
