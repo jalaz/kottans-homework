@@ -109,7 +109,7 @@ section {
 }
 
 .copyright:before{
-	content: "© "
+	content: "\00A9 "
 }
 
 .faq {
