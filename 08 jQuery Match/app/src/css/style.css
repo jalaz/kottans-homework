@@ -1,0 +1,49 @@
+body > header a:after {
+  content: '|';
+  color: black;
+  margin: 0 15px 0 15px;
+}
+
+body > header a:last-child:after {
+  content: '';
+}
+
+.person {
+  transition: all .3s ease;
+  height: auto;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 20px;
+  position: relative;
+}
+.person a {
+  padding-top: 40px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.person.male {
+  border-color: blue;
+}
+
+.person.female {
+  border-color: pink;
+}
+.person.male:before {
+  content: '♂';
+  color: blue;
+}
+.person.female:before {
+  content: '♀';
+  color: pink;
+  font-weight: 800;
+}
+.person:before {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  display: block;
+  font-size: 40px;
+}
